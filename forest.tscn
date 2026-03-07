@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=4 uid="uid://cgmye410ujw0j"]
+
+[ext_resource type="Texture2D" uid="uid://c7ptmbxg6f2h2" path="res://Super Mango Platformer Assets by JuhoSprite/Forest_Background_0.png" id="1_lifw2"]
+[ext_resource type="Script" uid="uid://b3ptdd3hv2m4b" path="res://forest.gd" id="1_vmuxp"]
+[ext_resource type="TileSet" uid="uid://dinyujddpj8dl" path="res://forest_item.tres" id="2_stcry"]
+[ext_resource type="PackedScene" uid="uid://d1k73sy7ogcnk" path="res://player.tscn" id="3_uq144"]
+[ext_resource type="PackedScene" uid="uid://bf5622giltp5s" path="res://spawn.tscn" id="4_mvm06"]
+[ext_resource type="PackedScene" uid="uid://ddlpj53dq5st5" path="res://kill_area.tscn" id="6_8im6m"]
+[ext_resource type="PackedScene" uid="uid://bqh5r5bt6lspx" path="res://map_switch.tscn" id="7_d8dn4"]
+
+[node name="forest" type="Node2D"]
+script = ExtResource("1_vmuxp")
+
+[node name="Background" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Background"]
+motion_mirroring = Vector2(640, 360)
+metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite2D" parent="Background/ParallaxLayer"]
+position = Vector2(320, 180)
+scale = Vector2(2, 2)
+texture = ExtResource("1_lifw2")
+metadata/_edit_lock_ = true
+
+[node name="TileMap" type="TileMapLayer" parent="."]
+scale = Vector2(2, 2)
+tile_map_data = PackedByteArray("AAD//wgABwAAAAAAAAAAAAgABwACAAAAAAAAAAkABwACAAEAAAAAAAoABwACAAEAAAAAAAsABwACAAEAAAAAAAwABwACAAEAAAAAAA0ABwACAAEAAAAAAA4ABwACAAEAAAAAAA8ABwACAAEAAAAAABAABwACAAEAAAAAABEABwACAAEAAAAAABIABwABAAEAAAAAABMABwABAAIAAAD//xMABwAAAAIAAAD//xIABwAAAAEAAAD//xEABwAAAAEAAAD//xAABwAAAAEAAAD//w8ABwAAAAEAAAD//w4ABwAAAAEAAAD//w0ABwAAAAEAAAD//wwABwAAAAEAAAD//wsABwAAAAEAAAD//woABwAAAAEAAAD//wkABwAAAAEAAAABABIABwABAAAAAAACABIABwABAAAAAAADABIABwABAAAAAAABABMABwABAAIAAAAEABIABwABAAAAAAAFABIABwABAAAAAAAGABIABwABAAAAAAAGABMABwABAAIAAAAHABMABwABAAIAAAAIABMABwABAAIAAAAIABIABwABAAAAAAAJABIABwABAAAAAAAKABIABwABAAAAAAAHABIABwABAAAAAAALABIABwABAAAAAAAMABIABwABAAAAAAANABIABwABAAAAAAAOABIABwABAAAAAAAPABIABwABAAAAAAAQABIABwABAAAAAAARABIABwABAAAAAAASABIABwABAAAAAAATABIABwABAAAAAAAUABIABwABAAAAAAAVABIABwABAAAAAAAWABIABwABAAAAAAAXABIABwABAAAAAAAYABIABwABAAAAAAAZABIABwABAAAAAAAaABIABwABAAAAAAAbABIABwABAAAAAAAcABIABwABAAAAAAAdABIABwACAAAAAAAdABMABwACAAIAAAAcABMABwABAAIAAAAbABMABwABAAIAAAAaABMABwABAAIAAAAZABMABwABAAIAAAAYABMABwABAAIAAAAXABMABwABAAIAAAAWABMABwABAAIAAAAVABMABwABAAIAAAAUABMABwABAAIAAAATABMABwABAAIAAAASABMABwABAAIAAAARABMABwABAAIAAAAQABMABwABAAIAAAAPABMABwABAAIAAAAOABMABwABAAIAAAANABMABwABAAIAAAAMABMABwABAAIAAAALABMABwABAAIAAAAKABMABwABAAIAAAAJABMABwABAAIAAAAFABMABwABAAIAAAAEABMABwABAAIAAAADABMABwABAAIAAAACABMABwABAAIAAAA=")
+tile_set = ExtResource("2_stcry")
+
+[node name="spawn" parent="." instance=ExtResource("4_mvm06")]
+position = Vector2(100, 560)
+scene_to_spawn = ExtResource("3_uq144")
+
+[node name="KillArea" parent="." instance=ExtResource("6_8im6m")]
+position = Vector2(400, 600)
+scale = Vector2(50, 1)
+
+[node name="map_switch" parent="." instance=ExtResource("7_d8dn4")]
+position = Vector2(789, 537)
+scale = Vector2(1, 4)
+target_scene_path = "res://forest_2.tscn"
