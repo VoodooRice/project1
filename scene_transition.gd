@@ -7,7 +7,7 @@ class_name SceneTransition# 定义为类名
 var spawn_config = {
 	"forest":{
 		"default": Vector2(90,530),# 默认生成在 (90,530)
-		"forest2_left":Vector2(750,530) # 从 forest 右侧进入时的重生点
+		"forest2_left":Vector2(650,530) # 从 forest 右侧进入时的重生点
 	},
 	"forest2":{
 		"default":Vector2(50,560) # 默认生成在 (50,560)

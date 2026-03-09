@@ -31,6 +31,14 @@ func _ready() -> void:
 			player.position = spawn_position
 			print("使用 SecneTransition 位置：", spawn_position)
 			
+			if transition.last_transition.to == name and transition.last_transition.from != "":
+				# 从左侧来 (direction = "left") → 朝右
+				# 从右侧来 (direction = "right") → 朝左
+				# 确认是否从右侧进入该场景
+				var should_face_left = (transition.last_transition.direction == "left")
+				player.sprite.flip_h = should_face_left
+				print("设置朝向：", "左" if should_face_left else "右")
+			
 		else:
 			player.position = player_spawner.position
 			print("未找到 SceneTransitionManager")
