@@ -11,6 +11,12 @@
 - 重生点管理：通过设计"Spawn"节点灵活管理玩家的复活位置
 - UI界面：包含一个简易的开始界面和退出功能
 
+## 正在研究的功能
+
+- 场景和地图切换系统
+- 收集系统
+- 音乐及音效
+
 致谢：
 美术资源：
 Super Mango Platformer Assets by JuhoSprite (https://juhosprite.itch.io/super-mango-2d-pixelart-platformer-asset-pack16x16)
