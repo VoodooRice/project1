@@ -10,7 +10,7 @@ var spawn_config = {
 		"forest2_left":Vector2(650,530) # 从 forest 右侧进入时的重生点
 	},
 	"forest2":{
-		"default":Vector2(50,560) # 默认生成在 (50,560)
+		"default":Vector2(135,560) # 默认生成在 (50,560)
 	}
 }
 
