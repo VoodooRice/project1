@@ -29,7 +29,7 @@ tile_map_data = PackedByteArray("AAD//wgABwAAAAAAAAAAAAgABwACAAAAAAAAAAkABwACAAE
 tile_set = ExtResource("2_stcry")
 
 [node name="spawn" parent="." instance=ExtResource("4_mvm06")]
-position = Vector2(86, 525)
+position = Vector2(90, 530)
 scene_to_spawn = ExtResource("3_uq144")
 
 [node name="KillArea" parent="." instance=ExtResource("6_8im6m")]
@@ -40,10 +40,11 @@ scale = Vector2(50, 1)
 position = Vector2(789, 504)
 scale = Vector2(1, 4)
 target_scene_path = "res://forest_2.tscn"
+exit_direction = "right"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="ControlUI" type="CanvasLayer" parent="."]
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer"]
+[node name="ControlUI" type="RichTextLabel" parent="ControlUI"]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5

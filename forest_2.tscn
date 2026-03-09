@@ -35,3 +35,4 @@ scene_to_spawn = ExtResource("4_jhsp8")
 position = Vector2(0, 537)
 scale = Vector2(1, 4)
 target_scene_path = "res://forest.tscn"
+exit_direction = "left"
