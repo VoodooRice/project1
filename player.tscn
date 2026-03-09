@@ -1,6 +1,6 @@
 [gd_scene load_steps=25 format=3 uid="uid://d1k73sy7ogcnk"]
 
-[ext_resource type="Texture2D" uid="uid://dk5g5f4j1vgl1" path="res://Super Mango Platformer Assets by JuhoSprite/Player.png" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://dk5g5f4j1vgl1" path="res://Assets/Player.png" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://doh0ydrwe5a8n" path="res://player.gd" id="1_onrkg"]
 [ext_resource type="Shader" uid="uid://bnrkm27bjnnov" path="res://player.gdshader" id="2_i3pqv"]
 [ext_resource type="Script" uid="uid://ugie7a82riwy" path="res://hit_flash.gd" id="4_hqtel"]

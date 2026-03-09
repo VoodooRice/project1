@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=4 uid="uid://cvy3y608yonpr"]
 
 [ext_resource type="Script" uid="uid://v86ygrdxab1f" path="res://forest_2.gd" id="1_pdcop"]
-[ext_resource type="Texture2D" uid="uid://c7ptmbxg6f2h2" path="res://Super Mango Platformer Assets by JuhoSprite/Forest_Background_0.png" id="1_we8ex"]
+[ext_resource type="Texture2D" uid="uid://c7ptmbxg6f2h2" path="res://Assets/Forest_Background_0.png" id="1_we8ex"]
 [ext_resource type="TileSet" uid="uid://dinyujddpj8dl" path="res://forest_item.tres" id="2_pdcop"]
 [ext_resource type="PackedScene" uid="uid://bf5622giltp5s" path="res://spawn.tscn" id="3_8wk30"]
 [ext_resource type="PackedScene" uid="uid://d1k73sy7ogcnk" path="res://player.tscn" id="4_jhsp8"]
