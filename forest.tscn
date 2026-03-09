@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=4 uid="uid://cgmye410ujw0j"]
 
-[ext_resource type="Texture2D" uid="uid://c7ptmbxg6f2h2" path="res://Super Mango Platformer Assets by JuhoSprite/Forest_Background_0.png" id="1_lifw2"]
+[ext_resource type="Texture2D" uid="uid://c7ptmbxg6f2h2" path="res://Assets/Forest_Background_0.png" id="1_lifw2"]
 [ext_resource type="Script" uid="uid://b3ptdd3hv2m4b" path="res://forest.gd" id="1_vmuxp"]
 [ext_resource type="TileSet" uid="uid://dinyujddpj8dl" path="res://forest_item.tres" id="2_stcry"]
 [ext_resource type="PackedScene" uid="uid://d1k73sy7ogcnk" path="res://player.tscn" id="3_uq144"]
@@ -53,5 +53,5 @@ offset_bottom = 150.0
 grow_horizontal = 2
 theme_override_font_sizes/normal_font_size = 40
 bbcode_enabled = true
-text = "[center]移动：[img=60%]res://Super Mango Platformer Assets by JuhoSprite/ArrowKeys.png[/img]
+text = "[center]移动：[img=60%]res://Assets/ArrowKeys.png[/img]
 跳跃:   Z   [/center]"
